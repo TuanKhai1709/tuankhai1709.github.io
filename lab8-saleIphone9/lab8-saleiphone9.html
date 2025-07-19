@@ -1,31 +1,38 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Bán hàng</title>
+    <title>Bán iPhone 9</title>
+    <link rel="stylesheet" href="saleiphone9.css">
     <script> 
         function display() {
-            //product name & price
             var pro = document.getElementById("pro");
             var name = pro.innerText;
             var price = pro.getAttribute("data-price");
-
-            //product quantity
             var qty = document.getElementById("qty");
             var quantity = qty.value;
-
             var amount = parseFloat(price) * quantity;
-
+            
             document.getElementById("name").innerText = name;
-            document.getElementById("amount").innerText = amount;
+            document.getElementById("amount").innerText = amount.toFixed(2);
         }
     </script>
 </head>
 <body>
-    <label id="pro" data-price="1950">iPhone 9</label>
-    <input id="qty" type="number" value="1" />
-    <button onclick="display()">OK</button>
-    <hr />
-    <h3>Name: <span id="name">?</span></h3>
-    <h3>Amount: <span id="amount">?</span></h3>
+    <div class="container">
+        <h1 class="product-title" id="pro" data-price="1950">iPhone 9</h1>
+        <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-card-40-iphone14-202209?wid=340&hei=264&fmt=p-jpg&qlt=95&.v=1661958160674" alt="iPhone 9" class="product-image">
+        <div class="price-tag">Giá: $1,950.00</div>
+        
+        <div class="input-section">
+            <label for="qty">Số lượng:</label>
+            <input id="qty" type="number" value="1" min="1" class="qty-input" />
+            <button onclick="display()" class="calculate-btn">Tính tổng</button>
+        </div>
+        
+        <div class="result-section">
+            <h3 class="result-text">Sản phẩm: <span id="name">?</span></h3>
+            <h3 class="result-text">Tổng tiền: <span id="amount" class="amount">?</span></h3>
+        </div>
+    </div>
 </body>
 </html>

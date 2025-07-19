@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f7;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.product-title {
+    font-size: 2.5em;
+    color: #1d1d1f;
+    margin-bottom: 20px;
+}
+
+.price-tag {
+    color: #666;
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.input-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.qty-input {
+    padding: 10px;
+    width: 80px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.calculate-btn {
+    background-color: #0071e3;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.calculate-btn:hover {
+    background-color: #0077ed;
+}
+
+.result-section {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.result-text {
+    color: #1d1d1f;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.amount::before {
+    content: '$';
+}
+
+.product-image {
+    max-width: 300px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
