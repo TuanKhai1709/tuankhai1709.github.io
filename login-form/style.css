@@ -1,0 +1,53 @@
+body { 
+    Background: #927057;
+    Text-Color: #ffffff;
+    Padding: 20px;
+}
+
+
+h1 {
+    color: #d5c395;
+    margin-bottom: 10px auto 0;
+    text-align: center;
+    background-position: center;
+}
+.avartar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    background-image: url('https://example.com/avatar.png');
+    background-size: cover;
+    background-position: center;
+}
+.frame {
+    position: relative;
+    top: 100px;
+    background-color:#8614146b;
+    color: #d5c395;
+    margin: 0 auto;
+    padding: 20px;
+    width: 80%;
+}
+h3 {
+    color: #ffffff;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 2px;
+}
+ 
+div input {
+    background-color: #d5c395;
+    color: #000000;
+    margin: 10px auto 0;
+    padding: 10px;
+    width: 80%;
+}
+
+.button {
+    color: #000000;
+    margin-top: 20px auto 0;
+    margin-bottom: 20px auto 0;
+    padding: 5px;
+}
