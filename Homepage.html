@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Seasonal Clothes Stores</title>
+    <link rel="stylesheet" href="Homepage.css">
+</head>
+<body>
+    <header>
+        <div class="logo">SEASONAL CLOTHES</div>
+        <nav>
+            <a class="active" href="#">Home page</a>
+            <a href="user-cart.html">Your Cart</a>
+            <a href="user-profile.html">Your Profile</a>
+            <a href="contact-page.html">Contact</a>
+            <button class="logout" onclick="location.href='login.html'">Log Out</button>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="filter-section">
+                <h3>Keywords</h3>
+                <div class="filter-group">
+                    <div class="filter-item">
+                        <input type="checkbox" id="spring">
+                        <label for="spring">Spring</label>
+                    </div>
+                    <div class="filter-item">
+                        <input type="checkbox" id="summer">
+                        <label for="summer">Summer</label>
+                    </div>
+                    <div class="filter-item">
+                        <input type="checkbox" id="autumn">
+                        <label for="autumn">Autumn</label>
+                    </div>
+                    <div class="filter-item">
+                        <input type="checkbox" id="winter">
+                        <label for="winter">Winter</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3>Pattern</h3>
+                <div class="filter-group">
+                    <div class="filter-item">
+                        <input type="checkbox" id="solid-color">
+                        <label for="solid-color">Solid Color</label>
+                    </div>
+                    <div class="filter-item">
+                        <input type="checkbox" id="pattern-color">
+                        <label for="pattern-color">Pattern Color</label>
+                    </div>
+                    <div class="filter-item">
+                        <input type="checkbox" id="modern-design">
+                        <label for="modern-design">Modern Design</label>
+                    </div>
+                    <div class="filter-item">
+                        <input type="checkbox" id="minimalist-design">
+                        <label for="minimalist-design">Minimalist Design</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="price-filter">
+                <h3>Price</h3>
+                <input type="range" min="0" max="100">
+                <span>$0-100</span>
+            </div>
+
+            <div class="filter-section">
+                <h3>Color</h3>
+                <div class="filter-group">
+                    <div class="filter-item">
+                        <input type="checkbox" id="black">
+                        <label for="black">Black</label>
+                    </div>
+                    <div class="filter-item">
+                        <input type="checkbox" id="white">
+                        <label for="white">White</label>
+                    </div>
+                    <div class="filter-item">
+                        <input type="checkbox" id="other">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3>Size</h3>
+                <div class="filter-group">
+                    <div class="filter-item">
+                        <input type="checkbox" id="size-s">
+                        <label for="size-s">S - Small</label>
+                    </div>
+                    <div class="filter-item">
+                        <input type="checkbox" id="size-m">
+                        <label for="size-m">M - Medium</label>
+                    </div>
+                    <div class="filter-item">
+                        <input type="checkbox" id="size-l">
+                        <label for="size-l">L - Large</label>
+                    </div>
+                    <div class="filter-item">
+                        <input type="checkbox" id="size-xl">
+                        <label for="size-xl">XL - Extra Large</label>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="product-section">
+            <div class="search-sort">
+                <input type="text" placeholder="Search">
+                <div class="sort-options">
+                    <button class="active">New</button>
+                    <button>Price ascending</button>
+                    <button>Price descending</button>
+                    <button>Rating</button>
+                </div>
+            </div>
+
+            <div class="product-grid">
+                <!-- Product Items -->
+                <div class="product-card">
+                    <img src ="https://tse3.mm.bing.net/th/id/OIP.1pabx4-OyY95rTphWtu7RgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Product Image" class="product-image">
+                    <label>Product 1<br>$0</label>
+                    <div class="buttons">
+                        <button class="order-btn">Order Now</button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src ="https://tse3.mm.bing.net/th/id/OIP.1pabx4-OyY95rTphWtu7RgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Product Image" class="product-image">
+                    <label>Product 2<br>$0</label>
+                    <div class="buttons">
+                        <button class="order-btn">Order Now</button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src ="https://tse3.mm.bing.net/th/id/OIP.1pabx4-OyY95rTphWtu7RgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Product Image" class="product-image">
+                    <label>Product 3<br>$0</label>
+                    <div class="buttons">
+                        <button class="order-btn">Order Now</button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src ="https://tse3.mm.bing.net/th/id/OIP.1pabx4-OyY95rTphWtu7RgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Product Image" class="product-image">
+                    <label>Product 4<br>$0</label>
+                    <div class="buttons">
+                        <button class="order-btn">Order Now</button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src ="https://tse3.mm.bing.net/th/id/OIP.1pabx4-OyY95rTphWtu7RgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Product Image" class="product-image">
+                    <label>Product 5<br>$0</label>
+                    <div class="buttons">
+                        <button class="order-btn">Order Now</button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src ="https://tse3.mm.bing.net/th/id/OIP.1pabx4-OyY95rTphWtu7RgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Product Image" class="product-image">
+                    <label>Product 6<br>$0</label>
+                    <div class="buttons">
+                        <button class="order-btn">Order Now</button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src ="https://tse3.mm.bing.net/th/id/OIP.1pabx4-OyY95rTphWtu7RgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Product Image" class="product-image">
+                    <label>Product 7<br>$0</label>
+                    <div class="buttons">
+                        <button class="order-btn">Order Now</button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src ="https://tse3.mm.bing.net/th/id/OIP.1pabx4-OyY95rTphWtu7RgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Product Image" class="product-image">
+                    <label>Product 8<br>$0</label>
+                    <div class="buttons">
+                        <button class="order-btn">Order Now</button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
