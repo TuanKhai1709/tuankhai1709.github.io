@@ -30,7 +30,7 @@ event.preventDefault();
     // If login is successful, redirect to the home page or dashboard
     if (loginSuccess) {
       alert("Login successful!");
-      window.location.href = "Homepage.html"; // Redirect to a homepage or dashboard
+      window.location.href = "index.html"; // Redirect to a homepage or dashboard
     } else {
       // If the user does not exist or credentials are incorrect, show an error message
       alert("Invalid email or password. Please try again.");
